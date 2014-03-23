@@ -21,6 +21,7 @@ namespace Dungeon_Crawl
         public static Species _mountainDwarf = new Species();
         public static Species _gnome = new Species();
         public static Species _faerie = new Species();
+        public static Species _demigod = new Species();
 
         public static Species[] speciesList;
         
@@ -69,6 +70,13 @@ namespace Dungeon_Crawl
             _faerie.armor = Armor.NONE;
             _faerie.abbrv = "Fa";
             _faerie.name = "Faerie";
+            
+            _demigod.baseStats = new BaseStatSet(17, 17, 2, 2, 10, 2);
+            _demigod.size = Size.MEDIUM;
+            _demigod.armor = Armor.NONE;
+            _demigod.abbrv = "DG";
+            _demigod.name = "Demigod";
+            
 
             //All accessible species
             //If a species is not in this list, it's not accessible by the player
@@ -80,6 +88,7 @@ namespace Dungeon_Crawl
                 _mountainDwarf,
                 _gnome,
                 _faerie
+                _demigod
             };
         }
 
